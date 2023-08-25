@@ -25,7 +25,7 @@
                                 <div class="col-2">
                                     <h5 class="card-title">
                                         <a href="javascript:void(0)" class="btn btn-success btn-sm"
-                                            onclick="modalShow(null,null)">Add new</a>
+                                            onclick="modalShow(null,null,null)">Add new</a>
                                     </h5>
                                 </div>
                             </div>
@@ -104,12 +104,18 @@
         function modalShow(status_id, name, status) {
             if (status_id) {
                 $("#id_status_id").val(status_id)
+            } else{
+                $("#id_status_id").val('')
             }
             if (name) {
                 $("#id_name").val(name)
+            } else{
+                $("#id_name").val('')
             }
             if (status) {
                 $("#option_id"+status).prop('selected',true)
+            } else{
+                $('#id_status').find($('option')).prop('selected',false)
             }
             $("#create-or-edit-modal").modal('show')
         }
