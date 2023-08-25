@@ -21,3 +21,5 @@
     admin@gmail.com, superadmin@gmail.com (Both have all access in application)
     user@gmail.com, moderator@gmail.com (Only task related access is given)
     For both use password (all in small letter) as password
+
+https://github.com/farhad-nstu/bf-lab/issues/1#issue-1866713088
