@@ -22,4 +22,4 @@
     user@gmail.com, moderator@gmail.com (Only task related access is given)
     For both use password (all in small letter) as password
 
-https://github.com/farhad-nstu/bf-lab/issues/1#issue-1866713088
+https://github.com/farhad-nstu/bf-lab/assets/50442242/f40c5d71-67f7-4ebe-87d2-6d100ba8204b
