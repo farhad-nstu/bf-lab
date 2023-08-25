@@ -1,4 +1,5 @@
 1. Clone project using below command
+
 git clone https://github.com/farhad-nstu/bf-lab.git 
 
 2. Install/Update composer using below command
