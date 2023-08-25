@@ -101,7 +101,7 @@
                                             <td>{{ $data->description }}</td>
                                             <td>{{ Carbon\Carbon::parse($data->due_date)->format('d/m/Y') }}</td>
                                             <td>{{ $data->status->name }}</td>
-                                            <td>{{ $data->createdBy->name }}</td>
+                                            <td>{{ $data->createdBy->name ?? '' }}</td>
                                             <td>
                                                 <div class="d-flex">
                                                     <a href="{{ route('tasks.edit', $data->id) }}"
