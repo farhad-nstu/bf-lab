@@ -23,7 +23,10 @@ class RoleSeeder extends Seeder
                 }
                 $savedRole->syncPermissions($data);
             } else{
-                $data = ['system.index'=>'system.index','logout.perform'=>'logout.perform'];
+                $data = [
+                    'system.index'=>'system.index','logout.perform'=>'logout.perform','tasks.index'=>'tasks.index',
+                    'tasks.create'=>'tasks.create','tasks.store'=>'tasks.store','tasks.edit'=>'tasks.edit','tasks.destroy'=>'tasks.destroy'
+                ];
                 $savedRole->syncPermissions($data);
             }
         }

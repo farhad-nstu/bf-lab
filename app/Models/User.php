@@ -48,4 +48,19 @@ class User extends Authenticatable
     {
         $this->attributes['password'] = bcrypt($value);
     }
+
+    // this will automatically insert updated_by and created_by in db
+    public static function boot()
+    {
+       parent::boot();
+       static::creating(function($model)
+       {
+           $model->created_by = auth()->id();
+           $model->updated_by = auth()->id();
+       });
+       static::updating(function($model)
+       {
+           $model->updated_by = auth()->id();
+       });
+   }
 }

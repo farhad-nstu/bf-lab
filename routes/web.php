@@ -30,6 +30,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::resource('roles', Permission\RolesController::class);
         Route::resource('permissions', Permission\PermissionsController::class);
         Route::resource('users', Permission\UsersController::class);
+        Route::resource('status', StatusController::class);
+        Route::resource('tasks', TaskController::class);
         // assign role to user
         Route::post('assign/role-to-user', 'Permission\UsersController@assignRoleToUser')->name('assignRoleToUser');
     });
