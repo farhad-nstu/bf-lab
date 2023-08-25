@@ -16,4 +16,3 @@ php artisan migrate --seed
 admin@gmail.com, superadmin@gmail.com (Both have all access in application)
 user@gmail.com, moderator@gmail.com (Only task related access is given)
 For both use password (all in small letter) as password
-
